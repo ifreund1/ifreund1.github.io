@@ -1,3 +1,65 @@
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url("../fonts/RobotoSlab-Regular.woff2") format('woff2'),
+      url("../fonts/RobotoSlab-Regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url("../fonts/RobotoSlab-Bold.woff2") format('woff2'),
+      url("../fonts/RobotoSlab-Bold.woff") format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*
+dark blue #2E5266
+slightly lighter blue #6E8898
+light blue #9FB1BC
+grey #D3D0CB
+Gold #E2C044
+*/
+
 body {
-  color: blue;
+  font-family:"Roboto Slab", sans-serif;
+color: #D3D0CB;
+background-color: #2E5266;
+margin: 0;
+width: 100%;
+}
+
+p {
+  margin:0;
+  padding:0;
+}
+
+#nav{
+  background-color: #6E8898;
+  height: 50px;
+}
+
+#nav * {
+  display: inline;
+}
+
+#nav ul{
+  margin: 0;
+  padding: 0;
+}
+
+#nav li {
+  margin-left:20px;
+}
+
+#nav li a {
+  color:#D3D0CB;
+  text-decoration:none;
+}
+
+#nav li a:hover {
+  color:black;
 }
