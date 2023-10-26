@@ -25,41 +25,50 @@ Gold #E2C044
 */
 
 body {
-  font-family:"Roboto Slab", sans-serif;
-color: #D3D0CB;
-background-color: #2E5266;
-margin: 0;
-width: 100%;
+  font-family: "Roboto Slab", sans-serif;
+  color: #D3D0CB;
+  background-color: #2E5266;
+  margin: 0;
+  width: 100%;
 }
 
 p {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
-#nav{
+#nav {
   background-color: #6E8898;
   height: 50px;
+  display: flex;
+  justify-content: center; /* Center the text horizontally */
+  align-items: center; /* Center the text vertically */
 }
 
 #nav * {
   display: inline;
 }
 
-#nav ul{
+#nav ul {
   margin: 0;
   padding: 0;
+  list-style: none; /* Remove bullet points from the list */
 }
 
 #nav li {
-  margin-left:20px;
+  margin-left: 70px;
+  margin-right: 70px;
+  display: inline;
 }
 
 #nav li a {
-  color:#D3D0CB;
-  text-decoration:none;
+  color: #D3D0CB;
+  text-decoration: none;
+  font-size: 30px; /* Adjust the font size as needed */
 }
 
 #nav li a:hover {
-  color:black;
+  color: black;
+
+
 }

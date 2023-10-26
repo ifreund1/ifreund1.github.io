@@ -4,19 +4,48 @@
     <meta charset="utf-8">
     <title>Portfolio Page</title>
     <meta name="description" content="" />
+    <style>
+        #name {
+            font-size: 180px;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-top: 50px;
+            padding: 75px;
+        }
+
+        @keyframes typing {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+
+        #name::after {
+            content: "Itamar Freund";
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 3s steps(90) 1s infinite;
+        }
+    </style>
 </head>
 <body>
-  <div id="nav">
-    <nav>
-    <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a href="workexperience.html">Work Experience</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="activities.html">Activities</a></li>
-    </ul>
-    </nav>
-  </div>
-  <p>Hello World</p>
-  <a href="about.html">About me!</a>
+    <div id="nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="workexperience.html">Work Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="activities.html">Activities</a></li>
+            </ul>
+        </nav>
+    </div>
+    <p id="name"></p>
+
+    <marquee>Use Tabs to Navigate</marquee>
 </body>
 </html>
