@@ -2,20 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>QUEST Starter - About Me</title>
+    <title>QUEST Starter - Work Experiences</title>
     <meta name="description" content="" />
+    <style>
+        #container {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .logo {
+            width: 300px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .description {
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
-  <div id="nav">
-    <nav>
-    <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a href="workexperience.html">Work Experience</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="activities.html">Activities</a></li>
-    </ul>
-    </nav>
-  </div>
-  <p>Here is content about myself</p>
+    <div id="nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="workexperience.html">Work Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="activities.html">Activities</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="container">
+        <img class="logo" src="https://cdn-images-1.medium.com/v2/resize:fit:1200/1*hf0ecpFZfddCxuYMRC9hxQ.png" alt="Company 1 Logo">
+        <div class="description">
+            <h2>CapTech Consulting</h2>
+            <p>Developed web application, chat bot, and data dashboard for internal client in a nationally ranked internship
+              Managed a team of 10 software developers and data analysts using Agile methodology
+              Utilized JIRA as a management tool to track and prioritize tasks, manage sprints, and facilitate team communication</p>
+        </div>
+    </div>
+    <div id="container">
+        <img class="logo" src="https://umd-brand.transforms.svdcdn.com/production/uploads/images/testudo-example-color.png?w=349&h=323&auto=compress%2Cformat&fit=crop&dm=1613801968&s=e580e8adbe3e35872ab9dc62579bc9ac" alt="Company 2 Logo">
+        <div class="description">
+            <h2>UMD - DIT</h2>
+            <p>Optimized University of Maryland’s Network Operations team ticket triaging process
+              Analyzed over 3000 ServiceNow data points to gain insights on team performance and customer satisfaction
+              Developed documentation aiding in the University’s 3-year-long project on implementing Workday as a
+              standard enterprise system
+              </p>
+        </div>
+    </div>
 </body>
 </html>

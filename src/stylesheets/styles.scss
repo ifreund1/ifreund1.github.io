@@ -41,8 +41,8 @@ p {
   background-color: #6E8898;
   height: 50px;
   display: flex;
-  justify-content: center; /* Center the text horizontally */
-  align-items: center; /* Center the text vertically */
+  justify-content: center;
+  align-items: center;
 }
 
 #nav * {
@@ -52,7 +52,7 @@ p {
 #nav ul {
   margin: 0;
   padding: 0;
-  list-style: none; /* Remove bullet points from the list */
+  list-style: none;
 }
 
 #nav li {
@@ -64,7 +64,7 @@ p {
 #nav li a {
   color: #D3D0CB;
   text-decoration: none;
-  font-size: 30px; /* Adjust the font size as needed */
+  font-size: 30px;
 }
 
 #nav li a:hover {

@@ -5,32 +5,44 @@
     <title>Portfolio Page</title>
     <meta name="description" content="" />
     <style>
-        #name {
-            font-size: 180px;
-            font-weight: bold;
-            white-space: nowrap;
-            overflow: hidden;
-            margin-top: 50px;
-            padding: 75px;
-        }
+      #name {
+          font-size: 180px;
+          font-weight: bold;
+          white-space: nowrap;
+          overflow: hidden;
+          margin-top: 50px;
+          padding: 75px;
+      }
 
-        @keyframes typing {
-            0% {
-                width: 0;
-            }
-            100% {
-                width: 100%;
-            }
-        }
+      @keyframes typing {
+          0% {
+              width: 0;
+          }
+          100% {
+              width: 100%;
+          }
+      }
 
-        #name::after {
-            content: "Itamar Freund";
-            display: inline-block;
-            white-space: nowrap;
-            overflow: hidden;
-            animation: typing 3s steps(90) 1s infinite;
-        }
-    </style>
+      @keyframes flicker {
+          0%, 100% {
+              content: "Itamar Freund.";
+              visibility: visible;
+          }
+          50% {
+              content: "Itamar Freund";
+              visibility: hidden;
+          }
+      }
+
+      #name::after {
+          content: "Itamar Freund";
+          display: inline-block;
+          white-space: nowrap;
+          overflow: hidden;
+          animation: typing 3s steps(90) 1s, flicker 0.9s infinite;
+      }
+  </style>
+
 </head>
 <body>
     <div id="nav">
@@ -46,6 +58,6 @@
     </div>
     <p id="name"></p>
 
-    <marquee>Use Tabs to Navigate</marquee>
+    <marquee>"I am the one who knocks"</marquee>
 </body>
 </html>

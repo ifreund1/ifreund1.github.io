@@ -2,20 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>QUEST Starter - About Me</title>
+    <title>QUEST Starter - Projects</title>
     <meta name="description" content="" />
+    <style>
+
+        .project {
+            margin: 20px auto;
+        }
+        .project img {
+            display: block;
+            margin: 0 auto;
+            width: 600px;
+            height: auto;
+        }
+        #project1_desc, #project2_desc, #project3_desc {
+            display: none;
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+    <script>
+        function toggleDescription(projectId) {
+            var projectDesc = document.getElementById(projectId);
+            if (projectDesc.style.display === 'block') {
+                projectDesc.style.display = 'none';
+            } else {
+                projectDesc.style.display = 'block';
+            }
+        }
+    </script>
 </head>
 <body>
-  <div id="nav">
-    <nav>
-    <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a href="workexperience.html">Work Experience</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="activities.html">Activities</a></li>
-    </ul>
-    </nav>
-  </div>
-  <p>Here is content about myself</p>
+    <div id="nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="workexperience.html">Work Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="activities.html">Activities</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="project">
+        <img src="https://cdn.mos.cms.futurecdn.net/mPUkF3JzY8XHyA6KtnjVv.jpg" alt="Project 1" onclick="toggleDescription('project1_desc');">
+        <div id="project1_desc">
+            <h2>D&H Distributing Capstone Project</h2>
+            <p>Discovered the best solution for a self-serve vendor portal to streamline communication between the company’s accounts payable team and their vendors.
+              Conducted a survey with 20+ responses to identify a potential time save of 52 working hours per week.
+              Calculated a comprehensive cost-benefit analysis and delivered strategic recommendations that will result in projected cost savings of $445K over the next five years.
+              </p>
+        </div>
+    </div>
+
+    <div class="project">
+        <img src="https://assets-global.website-files.com/5f6e963f3919ef665655adb0/6137c86b85b79aadd5678bd8_CloudTrucks_open_graph.png" alt="Project 2" onclick="toggleDescription('project2_desc');">
+        <div id="project2_desc">
+            <h2>CloudTrucks Data Consulting Project</h2>
+            <p>Analyzed over 150,000 customer service tickets to identify pain points in the ticket resolution process.
+              Utilized Zendesk Explore and Python scripts in data analysis and recommendation forming.
+              Provided visual representations of data that enabled the client to identify key trends, opportunities, and areas for improvement.
+              </p>
+        </div>
+    </div>
+
+    <div class="project">
+        <img src="https://i0.wp.com/universityhonors.umd.edu/wp-content/uploads/2020/09/UH-Shield-and-Text-horizontal-copy.png?fit=962%2C172&ssl=1" alt="Project 3" onclick="toggleDescription('project3_desc');">
+        <div id="project3_desc">
+            <h2>University Honors Consulting Project</h2>
+            <p>Tasked with improving and restructuring University Honors’s citation tracking and advising processes.
+              Conducted over 30 stakeholder interviews varying from students to faculty to effectively identify bottlenecks in the current process.
+              Leveraged various Six Sigma to aid in developing solutions that have been implemented as a program standard.
+              </p>
+        </div>
+    </div>
 </body>
 </html>
